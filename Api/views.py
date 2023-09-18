@@ -37,6 +37,9 @@ def lec_process(filename, chunk_duration=90):
     
 #lecturer summarizer part with different option
 
+class Check(APIView):
+    def get(self, request):
+        return Response({"status": status.HTTP_200_OK})
 
 
 class Filesummary(APIView):
